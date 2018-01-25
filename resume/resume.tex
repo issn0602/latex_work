@@ -1,0 +1,213 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+\usepackage{fontawesome}
+
+\usepackage[colorlinks=true]{hyperref}
+
+\usepackage{booktabs,caption}
+
+% Set applicant's personal data for header
+\name{ Shankara Narayanan Sethuraman }
+
+\address{ \faMobilePhone \hspace{.01cm} (919) 931-7476 \linebreak \faEnvelope \hspace{.01cm} ssethur2@ncsu.edu }
+
+\contacts{  \faLinkedinSquare \hspace{.01cm} \href{https://www.linkedin.com/in/issn0602/}{issn0602} \linebreak \faGithub \hspace{.01cm} \href{https://www.github.com/issn0602/}{issn0602} }
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+    \vspace{-.1cm}
+    \begin{center}
+		San Jose, CA
+    \end{center}
+	% Print the content
+	
+    \vspace{-.6cm}
+    
+    \begin{cvsection}{Education}
+		
+        \vspace{.2cm}
+        
+        \begin{cvsubsection}{North Carolina State University}{M.S. in Electrical Engineering}{Graduation - Aug 2017}
+			\vspace{-.3cm}
+            \begin{itemize}
+				\item Coursework - Algorithms, Object Oriented Design, Data Mining, Machine Learning, Computer Vision, Graphical Models, Computer Networks, Signal Processing, Neural Networks, Random Processes
+           \end{itemize}
+        \end{cvsubsection}
+        
+        \vspace{-.1cm}
+        
+        \begin{cvsubsection}{Birla Institute of Technology and Science, Pilani}{B.E. in Electrical and Electronics Engineering}{Graduation - Aug 2014}
+			\vspace{-.1cm}
+            \begin{itemize}
+				\item Relevant Courses - Image Processing, Embedded Systems, Numerical Analysis, Operations Research, Fuzzy Logic
+           \end{itemize}
+        \end{cvsubsection}
+	\end{cvsection}
+    
+    \vspace{-.2cm}
+    
+    \begin{cvsection}{Skills}
+        
+        \vspace{.05cm}
+        
+        \begin{cvsubsection}{}{}{}
+            
+            \begin{tabular}{p{10cm} p{10cm}}
+            
+            	{ Languages - Python, R, C++, Java, Ruby on Rails } & { Databases - MySQL, MongoDB, PostgreSQL } \\
+                { Cloud - IBM Cloud, Apache Spark, Heroku, AWS } & { Tools - MATLAB, Anaconda, Git, \LaTeX }
+			\end{tabular}
+            
+        \end{cvsubsection}
+	
+    \end{cvsection}
+    
+	\vspace{-.3cm}
+
+	\begin{cvsection}{Employment}
+        
+        \vspace{.2cm}
+        
+        \begin{cvsubsection}{Research Assistant}{Indian Institute of Science}{Jan-June 2015}
+			
+            \vspace{-.2cm}
+            
+            \begin{itemize}
+				\item Worked on face and attribute recognition from low-resolution video
+                \item Developed image annotation algorithms in OpenCV ( C++ )
+                \item Deployed the system to monitor the lab in real time (logs entry and exits in the lab)
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Research Assistant}{Indian Statistical Institute}{July-Dec 2014}	
+			
+            \vspace{-.2cm}
+            
+            \begin{itemize}
+				\item Conducted a literature study on sparse representations, non-linear prediction and zooming deblurring
+                \item Implemented multi-image super-resolution on non-overlapping low resolution images in MATLAB
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{IMImobile}{Associate Software Engineer}{Jan-June 2014}		
+			
+            \vspace{-.2cm}
+            
+            \begin{itemize}
+				\item Handled Messaging and Voice APIs in Java
+                \item Developed Unit Test Cases for Feed4junit library
+				\item Developed an E-Wallet using MongoDB for the Open House App
+			\end{itemize}
+		\end{cvsubsection}
+		
+	\end{cvsection}
+	
+	\vspace{-.2cm}
+    
+    \begin{cvsection}{Technical Experience}
+		
+        \vspace{.2cm}
+        
+        \begin{cvsubsection}{Machine Comprehension of Text}{Python, Tensoflow, ARC Cluster}{2017}
+        
+        	\vspace{-.3cm}
+            
+            \begin{itemize}
+            	
+                \item Implemented an NLP pipeline using the LSTM model to find contextual relationship between passages and queries
+                
+                \item Generated embeddings using word2vec and used softmax activation to generate the answer
+                
+                \item The model exceeded baseline performance with both the bAbi (72.46\%) and IMDB (82.8\%) datasets
+                
+            \end{itemize}
+            
+        \end{cvsubsection}
+        
+        \begin{cvsubsection}{Single View Metrology}{C++, OpenCV, Blender}{2017}
+        
+        	\vspace{-.2cm}
+        
+        	\begin{itemize}
+            
+            	\item Computed the vanishing points of an image using LSD and RANSAC
+                \item Computed the projection and homograph matrix and generated texture maps for the XY, YZ and XZ planes
+                \item Visualized the reconstructed 3D model using blender
+            
+            \end{itemize}
+        
+        \end{cvsubsection}
+        
+        \begin{cvsubsection}{API integration into Expertiza}{Ruby on Rails, PostgreSQL}{2016}
+        
+        	\vspace{-.2cm}
+            
+            \begin{itemize}
+            
+            	\item A background task was created to send files from Expertiza to the Simicheck API
+                \item Four types of files were handles : PDF, Google Docs, Webpages and Github repos
+                \item A view was created to display the results from Simicheck
+
+ 			\end{itemize}
+        
+        \end{cvsubsection}
+        
+        \begin{cvsubsection}{Room Reservation System}{Ruby on Rails, Postgres, Heroku}{2016}
+        
+        	\vspace{-.3cm}
+            
+            \begin{itemize}
+            
+            	\item Developed the workflow for a Ruby on Rails application to mimic the NCSU library website
+                \item Designed the frontend in HTML, databases in Postgres and backend in Ruby on Rails
+                \item Deployed the application on Heroku
+            
+            \end{itemize}
+        
+        \end{cvsubsection}
+		
+    	\begin{cvsubsection}{Virtual Network Design}{HTML, CSS, JavaScript}{2015}
+        
+        	\vspace{-.3cm}
+        	
+            \begin{itemize}
+            
+            	\item Implement medium access control scheme to deliver data between two nodes for 60 seconds
+                \item Extend the network to N nodes (user input) connected through a common bus
+                \item Implement routing protocol to deliver data between any pair of nodes for 30 seconds
+            
+            \end{itemize}
+        	
+        \end{cvsubsection}
+    
+    \end{cvsection}
+	
+\end{document}
